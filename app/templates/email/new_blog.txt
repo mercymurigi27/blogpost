@@ -1,0 +1,9 @@
+Hello subscriber!
+
+There is a new blog update
+
+Title: {{blog.title}}
+Post: {{blog.content}}
+
+from,
+blogposts management.

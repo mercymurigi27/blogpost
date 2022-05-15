@@ -1,0 +1,2 @@
+Hello {{user.username}}, Welcome to Blogposts.
+We are thrilled to have you as our subscriber.
