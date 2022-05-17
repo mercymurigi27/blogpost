@@ -117,6 +117,7 @@ def comment(blog_id):
     new_comment = Comment(comment = comment, user_id = current_user._get_current_object().id, blog_id=blog_id)
     new_comment.save()
     return redirect(url_for('main.blog',id = blog.id))
+    
 def delete_comment(comment_id):
     if blog.user != current_user:
         abort(403)
