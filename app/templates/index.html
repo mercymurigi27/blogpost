@@ -15,7 +15,7 @@
                                 <div class="card" style="padding: 5%;background-color: transparent;">
                                     <div class="card-image">
                                         <img class="rounded-circle blog-img mr-10" class="card-img" src="{{ url_for('static', filename='photos/' + blog.user.profile_pic_path) }}"height="250" width="250">
-                                        <a href="{{url_for('main.user_posts',username = blog.user.username)}}"><span><strong> {{ blog.user.username | title}}</strong></span> </a>
+                                        <a href="{{url_for('main.user_posts',username = blog.user.username)}}"><span  style="color: #570A57; font-size: large;"><strong> {{ blog.user.username | title}}</strong></span> </a>
                                     </div>
                                     <div class="card-title" style="text-align: center;">
 
@@ -48,7 +48,7 @@
                 {% endfor %}  
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="container">
                     <div class="card cardquote" style="background-color: #3d1434; color: #e4dede;">
                         <p class="card-content">{{quote.quote}}</p>
